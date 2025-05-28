@@ -9,7 +9,7 @@ const academicLevelIdModal = document.getElementById("academicLevelId");
 const academicLevelNameModal = document.getElementById("academicLevelName");
 const idSpan = document.getElementById("IdSpan");
 
-const baseURL = 'https://studentmanager.runasp.net';
+const baseURL = 'http://studentmanager.runasp.net';
 
 document.addEventListener("DOMContentLoaded", () => {
 

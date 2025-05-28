@@ -4,7 +4,7 @@ document.getElementById('btnLogin').addEventListener('click', (event) => {
     const user = document.getElementById('usernameInput').value;
     const pass = document.getElementById('passwordInput').value;
 
-    fetch('https://studentmanager.runasp.net/api/Auth/login', {
+    fetch('http://studentmanager.runasp.net/api/Auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

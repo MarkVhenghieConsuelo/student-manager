@@ -5,7 +5,7 @@ let selectItems = [];
 let isNewItem = false;
 let currentItem = null;
 
-const baseURL = 'https://studentmanager.runasp.net';
+const baseURL = 'http://studentmanager.runasp.net';
 
 let academicYearSelectOptions = [];
 let courseYearSelectOptions = [];
