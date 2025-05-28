@@ -1,6 +1,5 @@
-// Initialize Charts
 let courseChart, genderChart, levelChart;
-
+const baseURL = 'http://studentmanager.runasp.net';
 document.addEventListener('DOMContentLoaded', function () {
 
   const token = localStorage.getItem('jwtToken');
@@ -70,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadCourseData() {
-  fetch('https://localhost:7064/api/Chart/students-per-course', {
+  fetch(`${baseURL}/api/Chart/students-per-course`, {
     headers: {
       'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`
     }
@@ -85,7 +84,7 @@ function loadCourseData() {
 }
 
 function loadGenderData() {
-  fetch('https://localhost:7064/api/Chart/students-per-gender', {
+  fetch(`${baseURL}/api/Chart/students-per-gender`, {
     headers: {
       'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`
     }
@@ -100,7 +99,7 @@ function loadGenderData() {
 }
 
 function loadLevelData() {
-  fetch('https://localhost:7064/api/Chart/students-per-level', {
+  fetch(`${baseURL}/api/Chart/students-per-level`, {
     headers: {
     'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`
     }
