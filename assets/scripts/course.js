@@ -4,7 +4,7 @@ let courses = [];
 let isNewItem = false;
 let currentItem = null;
 
-const baseURL = 'http://studentmanager.runasp.net';
+const baseURL = 'https://studentmanager.runasp.net';
 
 const editModal = document.getElementById("modalPage");
 const courseIdModal = document.getElementById("courseId");

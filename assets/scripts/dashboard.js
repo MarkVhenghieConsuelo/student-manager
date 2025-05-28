@@ -1,5 +1,5 @@
 let courseChart, genderChart, levelChart;
-const baseURL = 'http://studentmanager.runasp.net';
+const baseURL = 'https://studentmanager.runasp.net';
 document.addEventListener('DOMContentLoaded', function () {
 
   const token = localStorage.getItem('jwtToken');
