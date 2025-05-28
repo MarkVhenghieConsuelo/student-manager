@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const token = localStorage.getItem('jwtToken');
   if (!token) {
-    window.location.href = 'login.html';
+    window.location.href = 'Login.html';
   }
 
   const courseCtx = document.getElementById('studentsPerCourseChart').getContext('2d');

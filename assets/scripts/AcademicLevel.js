@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const token = localStorage.getItem('jwtToken');
     if (!token) {
-        window.location.href = 'login.html';
+        window.location.href = 'Login.html';
     }
 
     getData(`${baseURL}/api/AcademicLevel`, null);
